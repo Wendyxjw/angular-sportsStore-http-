@@ -1,0 +1,9 @@
+<div class="panel panel-default row" ng-controller="mainCtrl">
+    <div class="col-lg-3 panel-body">
+        <a ng-repeat="item in screens" class="btn btn-block btn-default" ng-class="{'btn-default':item==current}" ng-click="setScreen($index)">{{item}}</a>
+    </div>
+
+    <div class="col-lg-8 panel-body">
+        <div ng-include="getScreen()"></div>
+    </div>
+</div>
